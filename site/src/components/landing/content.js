@@ -10,6 +10,9 @@ import {
   faUserGraduate,
   faCode,
 } from "@fortawesome/free-solid-svg-icons"
+import {
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons"
 
 export default class Content extends Component {
   render() {
@@ -73,7 +76,7 @@ export default class Content extends Component {
                               <div>{node.description}</div>
                               <ul>
                                 {node.publications && node.publications.map(p=>{
-                                  return <li style={{fontSize:'small'}}>{p.authors}, <i>{p.title}</i>, {p.other}. <a href={p.link}>Link</a></li>
+                                  return <li style={{fontSize:'small'}}>{p.authors}, <i>{p.title}</i>, {p.other} <a href={p.link}>Link</a></li>
                                 })}
                               </ul>
                             </div>
@@ -84,7 +87,10 @@ export default class Content extends Component {
                               target="_blank"
                               rel="noreferrer"
                             >
-                              View
+                              <FontAwesomeIcon
+                                icon={faGithub}
+                                className="mr-2"
+                              />
                             </a>
                           </div>
                         </div>

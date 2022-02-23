@@ -17,6 +17,7 @@ module.exports = {
     stackOverflow: 'https://stackoverflow.com/users/6191913/silencej',
   },
   plugins: [
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

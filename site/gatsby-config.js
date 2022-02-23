@@ -7,9 +7,14 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `SiteName`,
-    description: `A minimalistic resume style Gatsby portfolio.`,
-    author: `@gmlunesa`,
+    title: `Chaofeng Wang`,
+    description: `A tech enthusiast seeking to positively affect the future`,
+    author: `silencej`,
+    email: 'owen263@gmail.com',
+    location: 'Shanghai',
+    github: 'https://github.com/silencej',
+    linkedin: 'https://www.linkedin.com/in/chaofeng-wang-6690391a',
+    stackoverflow: 'https://stackoverflow.com/users/6191913/silencej',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

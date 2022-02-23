@@ -3,9 +3,18 @@ import React from "react"
 import Image from "../image"
 import Links from "../links"
 
+import { StaticQuery, graphql } from "gatsby"
+
 import { Link } from "react-scroll"
 
+import {
+  useSiteData,
+} from '../../hooks/siteData'
+
 export default function Hero() {
+
+  const data = useSiteData()
+
   return (
     <section className="hero" id="hero">
       <div className="container h-100">
@@ -18,10 +27,8 @@ export default function Hero() {
                   👋
                 </span>
               </h1>
-              <h1>Hi. I'm Umiko</h1>
-              <p>
-                I work as a software developer at a game company. Will you be my
-                airsoft buddy?
+              <h1>Hi. I'm {data.site.siteMetadata.author}</h1>
+              <p>{data.site.siteMetadata.description}
               </p>
               <Link
                 to="content"
@@ -46,7 +53,7 @@ export default function Hero() {
                       alt="Hero Icon"
                     />
                   </div>
-                  <h3 className="card-title">@umikokommando</h3>
+                  <h3 className="card-title">@{data.site.siteMetadata.author}</h3>
                   <h4>
                     <span
                       className="mr-1"
@@ -56,14 +63,9 @@ export default function Hero() {
                     >
                       📍
                     </span>
-                    Tokyo
+                    {data.site.siteMetadata.location}
                     <br />
                   </h4>
-                  <p className="card-text">
-                    full-time software dev,
-                    <br />
-                    airsoft enthusiast
-                  </p>
                   <Links />
                 </div>
               </div>

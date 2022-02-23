@@ -6,6 +6,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons"
 
 import {
@@ -16,34 +17,34 @@ export default function Links() {
   const data = useSiteData()
   return (
     <ul className="list-group list-group-horizontal">
-    <li className="list-group-item">
-    <a
-    href={`mailto:${data.site.siteMetadata.email}`}
-    target="_blank"
-    rel="noreferrer"
-    alt="email link"
-    >
-    <FontAwesomeIcon icon={faEnvelope} />
-    </a>
-    </li>
-    <li className="list-group-item">
-    <a
-    href={data.site.siteMetadata.github}
-    target="_blank"
-    rel="noreferrer"
-    alt="github link"
-    >
-    <FontAwesomeIcon icon={faGithub} />
-    </a>
-    </li>
-    <li className="list-group-item">
-    <a
-    href={data.site.siteMetadata.linkedin}
-    target="_blank"
-    rel="noreferrer"
-    alt="linkedin link"
-    >
-    <FontAwesomeIcon icon={faLinkedin} />
+      <li className="list-group-item">
+        <a
+          href={`mailto:${data.site.siteMetadata.email}`}
+          target="_blank"
+          rel="noreferrer"
+          alt="email link"
+        >
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+      </li>
+      <li className="list-group-item">
+        <a
+          href={data.site.siteMetadata.github}
+          target="_blank"
+          rel="noreferrer"
+          alt="github link"
+        >
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+      </li>
+      <li className="list-group-item">
+        <a
+          href={data.site.siteMetadata.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          alt="linkedin link"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </li>
       { data.site.siteMetadata.twitter && <li className="list-group-item">
@@ -54,6 +55,16 @@ export default function Links() {
           alt="twitter link"
         >
           <FontAwesomeIcon icon={faTwitter} />
+        </a>
+      </li> }
+      { data.site.siteMetadata.stackOverflow && <li className="list-group-item">
+        <a
+          href={data.site.siteMetadata.stackOverflow}
+          target="_blank"
+          rel="noreferrer"
+          alt="stackOverflow link"
+        >
+          <FontAwesomeIcon icon={faStackOverflow} />
         </a>
       </li> }
     </ul>

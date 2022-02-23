@@ -16,6 +16,7 @@ export function useSiteData() {
           email
           github
           linkedin
+          stackOverflow
         }
       }
     }

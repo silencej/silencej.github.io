@@ -7,6 +7,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons"
 
 import { Link } from "react-scroll"
@@ -76,6 +77,16 @@ export default function Index() {
                   alt="twitter link"
                 >
                   <FontAwesomeIcon icon={faTwitter} />
+                </a>
+              </li> }
+              { data.site.siteMetadata.stackOverflow && <li className="list-inline-item mr-4">
+                <a
+                  href={data.site.siteMetadata.stackOverflow}
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="stackOverflow link"
+                >
+                  <FontAwesomeIcon icon={faStackOverflow} />
                 </a>
               </li> }
             </ul>

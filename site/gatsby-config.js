@@ -14,7 +14,7 @@ module.exports = {
     location: 'Shanghai',
     github: 'https://github.com/silencej',
     linkedin: 'https://www.linkedin.com/in/chaofeng-wang-6690391a',
-    stackoverflow: 'https://stackoverflow.com/users/6191913/silencej',
+    stackOverflow: 'https://stackoverflow.com/users/6191913/silencej',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

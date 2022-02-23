@@ -24,7 +24,12 @@ export default class Content extends Component {
                   link
                   description
                   language
-                  publications
+                  publications {
+                    authors
+                    title
+                    other
+                    link
+                  }
                 }
               }
             }
@@ -64,11 +69,13 @@ export default class Content extends Component {
                               </h4>
                             </div>
 
-                            <div className="card-text">{node.description}</div>
                             <div className="card-text">
-                              {node.publications && node.publications.map(p=>{
-                                return <div>p</div>
-                              })}
+                              <div>{node.description}</div>
+                              <ul>
+                                {node.publications && node.publications.map(p=>{
+                                  return <li style={{fontSize:'small'}}>{p.authors}, <i>{p.title}</i>, {p.other}. <a href={p.link}>Link</a></li>
+                                })}
+                              </ul>
                             </div>
                           </div>
                           <div className="card-footer">

@@ -19,13 +19,22 @@
   description: "Use image process to extract high level features defined by plant scientists, including longest branch length, branching features, bubble features and wavy features. Those features excel in classification task compared to Haralick and Zernick feature sets."
   link: "https://github.com/silencej/pollenTubeProc"
   publications:
-  - Wang C, Gui C-P, Liu H-K, Zhang D and Mosig A (2013), An Image Skeletonization-Based Tool for Pollen Tube Morphology Analysis and PhenotypingF, Journal of Integrative Plant Biology. Vol. 55(2), pp. 131-141. Blackwell Publishing Asia.
+  - authors: Wang C, Gui C-P, Liu H-K, Zhang D and Mosig A (2013)
+    title: An Image Skeletonization-Based Tool for Pollen Tube Morphology Analysis and Phenotyping
+    other: Journal of Integrative Plant Biology. Vol. 55(2), pp. 131-141. Blackwell Publishing Asia.
+    link: https://onlinelibrary.wiley.com/doi/10.1111/j.1744-7909.2012.01184.x
 
 - project: "In Vivo Flow Cytometry Picker"
   language: "MatLab, C++"
   description: "Signal processing for IVFC"
   link: "https://github.com/silencej/ivfcWavePicker"
   publications:
-  - Damm D, Wang C, Wei X and Mosig A (2009), Cell Counting for In Vivo Flow Cytometer Signals Using Wavelet-Based Dynamic Peak Picking, In Biomedical Engineering and Informatics, 2009. BMEI'09. 2nd International Conference on. , pp. 1-4.
-  - Li Y, Guo J, Wang C, Fan Z, Liu G, Wang C, Gu Z, Damm D, Mosig A and Wei X (2011), Circulation times of prostate cancer and hepatocellular carcinoma cells by in vivo flow cytometry, Cytometry Part A. Vol. 79(10), pp. 848-854.
+  - authors: Damm D, Wang C, Wei X and Mosig A (2009)
+    title: Cell Counting for In Vivo Flow Cytometer Signals Using Wavelet-Based Dynamic Peak Picking
+    other: In Biomedical Engineering and Informatics, 2009. BMEI'09. 2nd International Conference on. , pp. 1-4.
+    link: https://ieeexplore.ieee.org/document/5302475
+  - authors: Li Y, Guo J, Wang C, Fan Z, Liu G, Wang C, Gu Z, Damm D, Mosig A and Wei X (2011)
+    title: Circulation times of prostate cancer and hepatocellular carcinoma cells by in vivo flow cytometry
+    other: Cytometry Part A. Vol. 79(10), pp. 848-854.
+    link: https://onlinelibrary.wiley.com/doi/pdf/10.1002/cyto.a.21134
 

@@ -1,7 +1,7 @@
 
 - language: "C++"
 - language: "C#, Dotnet core"
-- language: "HTML+CSS+JavaScript"
+- language: "HTML5 + CSS + JavaScript"
 - language: "TypeScript"
 - language: "React, Redux"
 - language: "GatsbyJS"

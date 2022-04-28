@@ -1,13 +1,13 @@
 
-- project: "Wait-for-it"
-  language: "Bash"
-  description: "A script to let service A wait for service B"
-  link: "https://github.com/silencej/wait-for-it"
-
-- project: "Barman exporter for Prometheus"
-  language: "Python"
-  description: "Fix the bugs and make it more robust."
-  link: "https://github.com/silencej/prometheus-barman-exporter"
+# - project: "Wait-for-it"
+#   language: "Bash"
+#   description: "A script to let service A wait for service B"
+#   link: "https://github.com/silencej/wait-for-it"
+# 
+# - project: "Barman exporter for Prometheus"
+#   language: "Python"
+#   description: "Fix the bugs and make it more robust."
+#   link: "https://github.com/silencej/prometheus-barman-exporter"
 
 - project: "CAS PhD Thesis LaTeX Template"
   language: "LaTeX"
